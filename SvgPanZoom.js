@@ -25,7 +25,7 @@ export default class SvgPanZoom extends Component {
                 });
             });
         };
-        this.zoomToPoint = (x, y, scale, duration = 700, callback => {
+        this.zoomToPoint = (x, y, scale, duration = 700, callback)=> {
             const { viewDimensions } = this.state;
             const { canvasHeight, canvasWidth } = this.props;
             const zoomPoint = {
